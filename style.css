@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges; /* Edge sharp karega */
+    filter: contrast(1.1) brightness(1.1)
+   
+
+}
+header{
+    position: sticky;
+    width: 100%;
+    top:0%;
+    z-index: 1;
+}
+header nav {
+    background-color: rgb(22 21 21);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+header nav input{
+    border-radius: 6px;
+    font-size: 15px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 20px;
+}
+header nav button {
+    font-weight: 600;
+    padding: 5px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.view-recipe {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color:  rgb(255, 106, 0);
+    transition: transform 1s ease-in-out;
+    transform: scale(1.01);
+    
+}
+header nav button:hover, .view-recipe:hover{
+    transform: scale(1.01);
+    background-color: #eb5f08;
+}
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin: 20px auto;
+    
+}
+main{
+    width: 100%;
+}
+section {
+    max-width: 95%;
+    margin: 20px auto;
+    font-weight: bolder;
+    color: rgb(249, 244, 244);
+    text-align: center;
+    z-index: 44;
+}
+h2{
+    color: black;
+}
+
+
+.resipicard{
+    background-color: rgb(250, 232, 209);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    max-width: 300px;
+    cursor: pointer;
+    color: black;
+    border: 2px solide black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3  );
+}
+.resipicard:hover{
+    transform: scale(1.01);
+}
+.resipicard img {
+    height: 300px;
+}
+.resipicard p span {
+    font-weight: 600;
+    
+}
+.resipicard h3 {
+margin-top: 5px;
+}
+.resipicard p{
+margin-top: 10px;
+}
+
+#back {
+        position: absolute; 
+        bottom: 5px;
+        right: 5px;
+        font-size: 24px;
+        color: black;
+        background: lightgray;
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        
+    }
+    .adv{
+        margin:150px ;
+    }
+    .adv h3{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    /* js css */
+    ul{
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 20px;
+    }
+.contentbox {
+    position: relative;
+    display: none;
+    top:0%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: lightgrey;
+    color: black;
+    text-align: left;
+    animation: topslight .4s ease-in-out;
+}
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+
+
+@keyframes topslight {
+    0% {
+      
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
