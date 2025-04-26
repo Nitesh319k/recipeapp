@@ -68,7 +68,7 @@ const fetchdat = async (query) => {
         <h3>Instructions: </h3>
         <p>${meal.strInstructions}</p>
         <h3>Watch Recipe Video:</h3>
-        <iframe width="560" height="315" 
+        <iframe width="560" height="315 " class="iframe" 
         src="${meal.strYoutube.replace("watch?v=", "embed/")}" 
         frameborder="0" allowfullscreen>
     </iframe>

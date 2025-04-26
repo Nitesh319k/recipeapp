@@ -10,7 +10,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     image-rendering: crisp-edges; /* Edge sharp karega */
-    filter: contrast(1.1) brightness(1.1)
+    filter: contrast(1.1) brightness(1.1);
+    width: 100%;
    
 
 }
@@ -224,7 +225,30 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+    .resipicard{
+        max-width: 400px;
+    }
+    .iframe{
+        width: 300px;
+        height: auto;
+    }
+    .for-recipe{
+        margin-left: 30px;
+        text-align: center;
+    }
+    .for-recipe button{
+        margin: 10px;
+    }
+    header nav{
+        height: auto;
+        padding-top: 10px;
+    }
+    .adv{
+        padding: 20px;
+        margin: 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: smaller;
+    }
 }
 
 
